@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "e76fb7fe-e917-4491-801e-049b2350c757",
+		"name": "Ass2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17026087"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/signin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXNocTIwLjQuMkBnbWFpbC5jb20iLCJpYXQiOjE2NTQ2Mjk2MDgsImV4cCI6MTY1NTIzNDQwOH0.s9jN6t5rq_tW-9ncnuRNphUQDvnOkIvSMPDuw52jKoGvCB5Kq4RZ7hhXxTl7rgdIkqQ_U9pzuJPxlpyrOGeClA"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"usernameOrEmail\":\"mashq20.4.2@gmail.com\",\r\n    \"password\":\"passward\"\r\n   \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/auth/signin"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"mohamamd\",\r\n    \"username\":\"mash7\",\r\n    \"email\":\"mashq20.4.2@gmail.com\",\r\n    \"password\":\"passward\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/auth/signup"
+			},
+			"response": []
+		}
+	]
+}
